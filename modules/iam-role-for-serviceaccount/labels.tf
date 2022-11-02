@@ -1,6 +1,6 @@
 ### frigga name
 module "frigga" {
-  source     = "Young-ook/spinnaker/aws//modules/frigga"
+  source     = "git::https://github.com/jmalmeid/terraform-aws-spinnaker//modules/frigga"
   version    = "2.3.5"
   name       = var.name == null || var.name == "" ? "irsa" : var.name
   petname    = var.name == null || var.name == "" ? true : false

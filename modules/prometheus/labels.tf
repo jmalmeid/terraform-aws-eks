@@ -1,6 +1,6 @@
 ### frigga name
 module "frigga" {
-  source  = "Young-ook/spinnaker/aws//modules/frigga"
+  source  = "git::https://github.com/jmalmeid/terraform-aws-spinnaker//modules/frigga"
   version = "2.3.4"
   name    = lookup(var.helm, "name", local.default_helm_config["name"])
   petname = true

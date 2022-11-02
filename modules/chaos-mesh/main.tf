@@ -2,7 +2,7 @@
 
 # aws partitions
 module "aws" {
-  source = "Young-ook/spinnaker/aws//modules/aws-partitions"
+  source = "git::https://github.com/jmalmeid/terraform-aws-spinnaker//modules/aws-partitions"
 }
 
 locals {

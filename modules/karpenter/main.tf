@@ -6,7 +6,7 @@ locals {
 }
 
 module "irsa" {
-  source         = "Young-ook/eks/aws//modules/iam-role-for-serviceaccount"
+  source         = "git::https://github.com/jmalmeid/terraform-aws-eks//modules/iam-role-for-serviceaccount"
   name           = join("-", ["irsa", local.name])
   namespace      = local.namespace
   serviceaccount = local.serviceaccount

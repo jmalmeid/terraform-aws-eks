@@ -11,6 +11,12 @@ variable "oidc" {
   type        = map(any)
 }
 
+### description
+variable "cluster_name" {
+  description = "The kubernetes cluster name"
+  type        = string
+}
+
 ### tags
 variable "tags" {
   description = "The key-value maps for tagging"

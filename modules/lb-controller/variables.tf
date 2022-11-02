@@ -12,7 +12,7 @@ variable "oidc" {
 }
 
 ### description
-variable "clusterName" {
+variable "cluster_name" {
   description = "The kubernetes cluster name"
   type        = string
 }
